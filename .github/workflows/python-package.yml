@@ -31,7 +31,8 @@ jobs:
 
       # Step 4: Run tests in the 'tests' folder
       - name: Run tests for Python 3.8
-        run: pytest tests/  # Update path if needed
+        run: pytest
+
 
       # Step 5: Login to DockerHub
       - name: Login to DockerHub
