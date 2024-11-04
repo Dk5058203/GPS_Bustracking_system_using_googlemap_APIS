@@ -1,3 +1,4 @@
 pytest
 requests
 numpy
+Flask==2.2.3
