@@ -5,6 +5,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self
+  fetchDepth: 1    # Optional, but helps in shallow cloning for faster runs
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
