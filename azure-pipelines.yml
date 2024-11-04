@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
@@ -17,10 +12,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
 - task: PythonScript@0
   inputs:
-    scriptSource: 'inline'
-    script: |
-      print("A online webpage with Front-end login based gpstracker system . -Designed using HTML,CSS and SQLite
-      
-      tracks the location of the bus route with the help of its latitude and longitude from google map APIs.A online webpage with Front-end login based gpstracker system . -Designed using HTML,CSS and SQLite - tracks the location of the bus route with the help of its latitude and longitude from google map APIs. Other contributors")
+    scriptSource: 'filePath'
+    scriptPath: 'gps_tracker_script.py'
