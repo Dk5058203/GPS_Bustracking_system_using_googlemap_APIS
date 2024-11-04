@@ -81,3 +81,5 @@ jobs:
         run: |
           pip install pytest
           pytest
+      - name: Run tests for Python 3.8
+        run: pytest test_example.py
